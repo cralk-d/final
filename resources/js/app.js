@@ -1,21 +1,27 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+import ControlSidebar from './ControlSidebar'
+import Layout from './Layout'
+import PushMenu from './PushMenu'
+import Treeview from './Treeview'
+import DirectChat from './DirectChat'
+import TodoList from './TodoList'
+import CardWidget from './CardWidget'
+import CardRefresh from './CardRefresh'
+import Dropdown from './Dropdown'
+import Toasts from './Toasts'
 
-require('./bootstrap');
-require('./ControlSidebar');
-require('./CardWidget');
-require('./CardRefresh');
-require('./DirectChat');
-require('./Dropdown');
-require('./Layout');
-require('./PushMenu');
-require('./SiteSearch');
-require('./Toasts');
-require('./TodoList');
-require('./Treeview');
+export {
+  ControlSidebar,
+  Layout,
+  PushMenu,
+  Treeview,
+  DirectChat,
+  TodoList,
+  CardWidget,
+  CardRefresh,
+  Dropdown,
+  Toasts
+}
+
 
 window.Vue = require('vue');
 
@@ -42,3 +48,4 @@ Vue.component('follow-button', require('./components/FollowButton.vue').default)
 const app = new Vue({
     el: '#app',
 });
+
